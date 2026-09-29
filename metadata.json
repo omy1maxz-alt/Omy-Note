@@ -1,0 +1,6 @@
+{
+  "name": "AI Notes",
+  "description": "Offline-first notes app with rich blocks, handwriting, search, PDF export, backups, and optional Google Gemini AI assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

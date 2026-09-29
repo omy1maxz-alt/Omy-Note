@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Main Notebook Body -->
+    <path
+        android:fillColor="#E0F2F1"
+        android:pathData="M32,24h38c3.31,0 6,2.69 6,6v48c0,3.31 -2.69,6 -6,6H32c-3.31,0 -6,-2.69 -6,-6V30c0,-3.31 2.69,-6 6,-6z" />
+    
+    <!-- Spine Accent -->
+    <path
+        android:fillColor="#80CBC4"
+        android:pathData="M26,30c0,-3.31 2.69,-6 6,-6h4v60h-4c-3.31,0 -6,-2.69 -6,-6V30z" />
+
+    <!-- Notebook Text Lines -->
+    <path
+        android:fillColor="#004D40"
+        android:pathData="M42,38h26v3.5H42z M42,46h26v3.5H42z M42,54h18v3.5H42z" />
+
+    <!-- Bookmark Ribbon -->
+    <path
+        android:fillColor="#FF7043"
+        android:pathData="M60,24v16l4,-3 4,3V24z" />
+
+    <!-- Golden Pencil / Stylus -->
+    <path
+        android:fillColor="#FFCA28"
+        android:pathData="M78.5,58.5l-3,3 8,8 3,-3c0.8,-0.8 0.8,-2 0,-2.8l-5.2,-5.2c-0.8,-0.8 -2,-0.8 -2.8,0z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M65.5,71.5l10,10 8,-8 -10,-10z" />
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M62,86l6.5,-2.5 -4,-4z" />
+
+    <!-- AI Sparkle Star -->
+    <path
+        android:fillColor="#FFF9C4"
+        android:pathData="M46,65c0,3.5 -2.5,6 -6,6 3.5,0 6,2.5 6,6 0,-3.5 2.5,-6 6,-6 -3.5,0 -6,-2.5 -6,-6z" />
+</vector>
