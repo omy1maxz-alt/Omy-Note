@@ -85,6 +85,17 @@ All notable changes to the AI Notes application are documented in this file.
   - "Place Between Paragraphs..." dialog (`📍`) to instantly teleport an image between any specific paragraphs.
   - Cursor-aware insertion: Inserting an image while editing text automatically splits the paragraph and places the image directly between the top and bottom halves.
 
+## [2.0.0] - 2026-09-29
+
+### Added & Enhanced
+- Two-Finger Pinch-to-Resize on Images:
+  - Direct 2-finger pinch gesture smoothly resizes image width between 20% and 100% in real-time.
+  - Resolved vertical scroll lock: Single-finger swipes over images pass directly to `LazyColumn`, allowing smooth scrolling up and down the note even when images sit at the top.
+  - Image Size & Position Dialog: Tapping the bottom-right badge (`% 🤏`) opens quick width presets (`25%`, `50%`, `75%`, `100%`) and Alignment options (`Left`, `Center`, `Right`).
+  - Top-left reordering pill with `↑` Move Up, `↓` Move Down, and `📍 Place Between Paragraphs`.
+- Automatic Dashboard Return on Save:
+  - Tapping the "Save" button in the Top App Bar saves changes, dismisses the keyboard, and automatically navigates back to the main dashboard.
+
 ## [1.9.1] - 2026-09-28
 
 ### Fixed

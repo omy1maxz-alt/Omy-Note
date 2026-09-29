@@ -131,3 +131,15 @@
 - AGP now automatically utilizes the standard default Android debug keystore (`~/.android/debug.keystore`), allowing clean GitHub clones to run `assembleDebug` out of the box on AndroidIDE or any development machine without requiring a project-local keystore.
 - Verified compilation and APK packaging with zero errors.
 
+## Phase 19: Pinch-to-Resize on Images, Unblocked Note Scrolling & Auto-Back on Save
+
+- Multi-touch Pinch to Resize:
+  - Replaced single-pointer drag gestures with multi-touch `awaitEachGesture` detector on images.
+  - 2-finger pinch gestures smoothly compute zoom scale changes in real-time, scaling image width between 20% and 100%.
+  - 1-finger touches and vertical swipe gestures are never consumed, allowing LazyColumn scrolling to work smoothly even when large images occupy the top of the note viewport.
+- Image Size & Position Dialog:
+  - Added bottom-right floating badge (`% 🤏`) that reveals quick width buttons (`25%`, `50%`, `75%`, `100%`) and Alignment toggles (`Left`, `Center`, `Right`).
+  - Added dedicated top-left action pill with `↑` Move Up, `↓` Move Down, and `📍 Place Between Paragraphs`.
+- Automatic Return to Dashboard on Save:
+  - Pressing the "Save" button in the Top App Bar saves changes, hides the keyboard, and automatically navigates back to the main dashboard.
+

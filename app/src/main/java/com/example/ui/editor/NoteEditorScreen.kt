@@ -14,6 +14,7 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.gestures.awaitEachGesture
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.gestures.detectDragGesturesAfterLongPress
 import androidx.compose.foundation.Image
@@ -552,6 +553,7 @@ fun NoteEditorScreen(
     var showHistoryDialog by remember { mutableStateOf(false) }
     var showImageSourceDialog by remember { mutableStateOf(false) }
     var placeImageTargetIndex by remember { mutableStateOf<Int?>(null) }
+    var activeImageSettingsIndex by remember { mutableStateOf<Int?>(null) }
     var showAiResultDialog by remember { mutableStateOf<Pair<String, String>?>(null) } // Title to Result
 
     // Keyboard & Clipboard
@@ -846,7 +848,11 @@ fun NoteEditorScreen(
                         }) {
                             ExpressiveAiIcon(size = 26.dp)
                         }
-                        IconButton(onClick = { saveCurrentNote(commitHistory = true) }) {
+                        IconButton(onClick = {
+                            keyboardController?.hide()
+                            saveCurrentNote(commitHistory = true, showFeedback = true)
+                            onBack()
+                        }) {
                             Icon(Icons.Default.Check, contentDescription = "Save", tint = Color.White)
                         }
                     },
@@ -923,6 +929,7 @@ fun NoteEditorScreen(
                                 .clickable {
                                     keyboardController?.hide()
                                     saveCurrentNote(commitHistory = true, showFeedback = true)
+                                    onBack()
                                 }
                                 .testTag("save_note_button")
                         ) {
@@ -1791,8 +1798,6 @@ fun NoteEditorScreen(
                             val bitmap = remember(block.imagePath) {
                                 if (imgFile != null) BitmapLoader.loadScaledBitmap(imgFile, 800, 600) else null
                             }
-                            var dragOffsetY by remember(block.id) { mutableFloatStateOf(0f) }
-                            var isDraggingImage by remember(block.id) { mutableStateOf(false) }
                             var resizeScale by remember(block.id, block.imageScale) { mutableFloatStateOf(block.imageScale) }
 
                             val alignment = when (block.imageAlignment) {
@@ -1807,88 +1812,42 @@ fun NoteEditorScreen(
                                     .padding(vertical = 4.dp),
                                 horizontalAlignment = alignment
                             ) {
-                                // Real-time Visual Placement Indicator during Drag & Drop
-                                if (isDraggingImage && dragOffsetY != 0f) {
-                                    Surface(
-                                        shape = RoundedCornerShape(8.dp),
-                                        color = MaterialTheme.colorScheme.primary,
-                                        modifier = Modifier
-                                            .fillMaxWidth(resizeScale.coerceIn(0.2f, 1.0f))
-                                            .padding(bottom = 6.dp)
-                                    ) {
-                                        Row(
-                                            modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
-                                            verticalAlignment = Alignment.CenterVertically,
-                                            horizontalArrangement = Arrangement.Center
-                                        ) {
-                                            Icon(
-                                                imageVector = Icons.Default.Place,
-                                                contentDescription = null,
-                                                tint = Color.White,
-                                                modifier = Modifier.size(16.dp)
-                                            )
-                                            Spacer(modifier = Modifier.width(6.dp))
-                                            Text(
-                                                text = if (dragOffsetY > 0) "📍 Placing image down between text..." else "📍 Placing image up between text...",
-                                                fontSize = 11.sp,
-                                                fontWeight = FontWeight.Bold,
-                                                color = Color.White
-                                            )
-                                        }
-                                    }
-                                }
-
-                                // Clean Image Container: NO BOX FRAME, NO CARD
+                                // Clean Image Container: 2-Finger Pinch-to-Resize while 1-finger scrolls freely!
                                 Box(
                                     modifier = Modifier
                                         .fillMaxWidth(resizeScale.coerceIn(0.2f, 1.0f))
-                                        .graphicsLayer {
-                                            if (isDraggingImage) {
-                                                alpha = 0.82f
-                                                scaleX = 1.02f
-                                                scaleY = 1.02f
-                                                translationY = dragOffsetY.coerceIn(-80f, 80f)
-                                                shadowElevation = 8f
-                                            }
-                                        }
                                         .clip(RoundedCornerShape(10.dp))
-                                        // Drag & drop happens when holding and dragging the image freely
-                                        .pointerInput(blocks.size, index, block.id) {
-                                            detectDragGestures(
-                                                onDragStart = {
-                                                    isDraggingImage = true
-                                                    dragOffsetY = 0f
-                                                },
-                                                onDrag = { change, dragAmount ->
-                                                    change.consume()
-                                                    dragOffsetY += dragAmount.y
-                                                    if (dragOffsetY > 55f && index < blocks.lastIndex) {
-                                                        captureSnapshot()
-                                                        val currentItem = blocks.removeAt(index)
-                                                        blocks.add(index + 1, currentItem)
-                                                        dragOffsetY = 0f
-                                                    } else if (dragOffsetY < -55f && index > 0) {
-                                                        captureSnapshot()
-                                                        val currentItem = blocks.removeAt(index)
-                                                        blocks.add(index - 1, currentItem)
-                                                        dragOffsetY = 0f
+                                        .pointerInput(block.id) {
+                                            awaitEachGesture {
+                                                do {
+                                                    val event = awaitPointerEvent()
+                                                    if (event.changes.size >= 2) {
+                                                        val p1 = event.changes[0]
+                                                        val p2 = event.changes[1]
+                                                        val prevDist = (p1.previousPosition - p2.previousPosition).getDistance()
+                                                        val currDist = (p1.position - p2.position).getDistance()
+                                                        if (prevDist > 0f && currDist > 0f) {
+                                                            val zoom = currDist / prevDist
+                                                            if (kotlin.math.abs(zoom - 1f) > 0.002f) {
+                                                                p1.consume()
+                                                                p2.consume()
+                                                                val newScale = (resizeScale * zoom).coerceIn(0.2f, 1.0f)
+                                                                if (kotlin.math.abs(newScale - resizeScale) > 0.002f) {
+                                                                    resizeScale = newScale
+                                                                    blocks[index] = block.copy(imageScale = newScale)
+                                                                    isDirty = true
+                                                                }
+                                                            }
+                                                        }
                                                     }
-                                                },
-                                                onDragEnd = {
-                                                    isDraggingImage = false
-                                                    dragOffsetY = 0f
-                                                },
-                                                onDragCancel = {
-                                                    isDraggingImage = false
-                                                    dragOffsetY = 0f
-                                                }
-                                            )
+                                                } while (event.changes.any { it.pressed })
+                                            }
                                         }
                                 ) {
                                     if (bitmap != null) {
                                         Image(
                                             bitmap = bitmap.asImageBitmap(),
-                                            contentDescription = "Note image (Hold and drag to move between text)",
+                                            contentDescription = "Note image (Pinch with two fingers to resize)",
                                             contentScale = ContentScale.FillWidth,
                                             modifier = Modifier
                                                 .fillMaxWidth()
@@ -1908,14 +1867,59 @@ fun NoteEditorScreen(
                                         }
                                     }
 
+                                    // Top-left compact Move / Reorder Badges
+                                    Surface(
+                                        shape = RoundedCornerShape(14.dp),
+                                        color = Color.Black.copy(alpha = 0.65f),
+                                        modifier = Modifier
+                                            .align(Alignment.TopStart)
+                                            .padding(6.dp)
+                                    ) {
+                                        Row(
+                                            verticalAlignment = Alignment.CenterVertically,
+                                            modifier = Modifier.padding(horizontal = 4.dp, vertical = 2.dp)
+                                        ) {
+                                            if (index > 0) {
+                                                IconButton(
+                                                    onClick = {
+                                                        captureSnapshot()
+                                                        val item = blocks.removeAt(index)
+                                                        blocks.add(index - 1, item)
+                                                    },
+                                                    modifier = Modifier.size(28.dp)
+                                                ) {
+                                                    Icon(Icons.Default.KeyboardArrowUp, contentDescription = "Move Up", tint = Color.White, modifier = Modifier.size(18.dp))
+                                                }
+                                            }
+                                            if (index < blocks.lastIndex) {
+                                                IconButton(
+                                                    onClick = {
+                                                        captureSnapshot()
+                                                        val item = blocks.removeAt(index)
+                                                        blocks.add(index + 1, item)
+                                                    },
+                                                    modifier = Modifier.size(28.dp)
+                                                ) {
+                                                    Icon(Icons.Default.KeyboardArrowDown, contentDescription = "Move Down", tint = Color.White, modifier = Modifier.size(18.dp))
+                                                }
+                                            }
+                                            IconButton(
+                                                onClick = { placeImageTargetIndex = index },
+                                                modifier = Modifier.size(28.dp)
+                                            ) {
+                                                Icon(Icons.Default.Place, contentDescription = "Place Between Paragraphs", tint = Color(0xFFFFD54F), modifier = Modifier.size(16.dp))
+                                            }
+                                        }
+                                    }
+
                                     // Top-right Discreet Delete Button
                                     Box(
                                         modifier = Modifier
                                             .align(Alignment.TopEnd)
                                             .padding(6.dp)
-                                            .size(28.dp)
+                                            .size(32.dp)
                                             .clip(CircleShape)
-                                            .background(Color.Black.copy(alpha = 0.6f))
+                                            .background(Color.Black.copy(alpha = 0.65f))
                                             .clickable {
                                                 captureSnapshot()
                                                 blocks.removeAt(index)
@@ -1926,40 +1930,38 @@ fun NoteEditorScreen(
                                             imageVector = Icons.Default.Close,
                                             contentDescription = "Delete image",
                                             tint = Color.White,
-                                            modifier = Modifier.size(15.dp)
+                                            modifier = Modifier.size(16.dp)
                                         )
                                     }
 
-                                    // Bottom-right Resize Handle Button (Drag freely to adjust size)
-                                    Box(
+                                    // Bottom-right Resize & Preset Button (Pinch hint & tap for quick size / alignment dialog)
+                                    Surface(
+                                        shape = RoundedCornerShape(14.dp),
+                                        color = Color.Black.copy(alpha = 0.72f),
                                         modifier = Modifier
                                             .align(Alignment.BottomEnd)
                                             .padding(6.dp)
-                                            .size(34.dp)
-                                            .clip(CircleShape)
-                                            .background(Color.Black.copy(alpha = 0.7f))
-                                            .pointerInput(block.id) {
-                                                detectDragGestures(
-                                                    onDrag = { change, dragAmount ->
-                                                        change.consume()
-                                                        val delta = (dragAmount.x + dragAmount.y) / 250f
-                                                        val newScale = (resizeScale + delta).coerceIn(0.2f, 1.0f)
-                                                        resizeScale = newScale
-                                                        blocks[index] = block.copy(imageScale = newScale)
-                                                    },
-                                                    onDragEnd = {
-                                                        captureSnapshot()
-                                                    }
-                                                )
-                                            },
-                                        contentAlignment = Alignment.Center
+                                            .clip(RoundedCornerShape(14.dp))
+                                            .clickable { activeImageSettingsIndex = index }
                                     ) {
-                                        Icon(
-                                            imageVector = Icons.Default.OpenInFull,
-                                            contentDescription = "Drag corner freely to resize image",
-                                            tint = Color.White,
-                                            modifier = Modifier.size(18.dp)
-                                        )
+                                        Row(
+                                            verticalAlignment = Alignment.CenterVertically,
+                                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
+                                            horizontalArrangement = Arrangement.spacedBy(4.dp)
+                                        ) {
+                                            Text(
+                                                text = "${(resizeScale * 100).toInt()}% 🤏",
+                                                color = Color.White,
+                                                fontSize = 11.sp,
+                                                fontWeight = FontWeight.Bold
+                                            )
+                                            Icon(
+                                                imageVector = Icons.Default.OpenInFull,
+                                                contentDescription = "Resize or adjust image",
+                                                tint = Color.White,
+                                                modifier = Modifier.size(13.dp)
+                                            )
+                                        }
                                     }
                                 }
 
@@ -2289,6 +2291,123 @@ fun NoteEditorScreen(
                 }
             }
         }
+    }
+
+    // Image Sizing & Alignment Dialog
+    val imageTarget = activeImageSettingsIndex?.let { if (it in blocks.indices && blocks[it].type == BlockType.IMAGE) blocks[it] else null }
+    if (activeImageSettingsIndex != null && imageTarget != null) {
+        val targetIdx = activeImageSettingsIndex!!
+        AlertDialog(
+            onDismissRequest = { activeImageSettingsIndex = null },
+            title = {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(Icons.Default.Image, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text("Image Size & Position", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                }
+            },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                    Text(
+                        text = "Tip: You can pinch with two fingers directly on the picture to resize dynamically.",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+
+                    // Quick Width Presets
+                    Text("Image Width:", fontWeight = FontWeight.SemiBold, style = MaterialTheme.typography.bodyMedium)
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        listOf(0.25f to "25%", 0.50f to "50%", 0.75f to "75%", 1.0f to "100%").forEach { (scale, label) ->
+                            val isSelected = kotlin.math.abs(imageTarget.imageScale - scale) < 0.08f
+                            Surface(
+                                shape = RoundedCornerShape(8.dp),
+                                color = if (isSelected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant,
+                                border = BorderStroke(1.dp, if (isSelected) MaterialTheme.colorScheme.primary else Color.Transparent),
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .clip(RoundedCornerShape(8.dp))
+                                    .clickable {
+                                        captureSnapshot()
+                                        blocks[targetIdx] = imageTarget.copy(imageScale = scale)
+                                    }
+                            ) {
+                                Box(modifier = Modifier.padding(vertical = 8.dp), contentAlignment = Alignment.Center) {
+                                    Text(
+                                        text = label,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                                        fontSize = 13.sp
+                                    )
+                                }
+                            }
+                        }
+                    }
+
+                    // Alignment
+                    Text("Alignment:", fontWeight = FontWeight.SemiBold, style = MaterialTheme.typography.bodyMedium)
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        listOf("left" to "Left", "center" to "Center", "right" to "Right").forEach { (alignVal, label) ->
+                            val isSelected = imageTarget.imageAlignment == alignVal || (alignVal == "center" && imageTarget.imageAlignment !in listOf("left", "right"))
+                            Surface(
+                                shape = RoundedCornerShape(8.dp),
+                                color = if (isSelected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant,
+                                border = BorderStroke(1.dp, if (isSelected) MaterialTheme.colorScheme.primary else Color.Transparent),
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .clip(RoundedCornerShape(8.dp))
+                                    .clickable {
+                                        captureSnapshot()
+                                        blocks[targetIdx] = imageTarget.copy(imageAlignment = alignVal)
+                                    }
+                            ) {
+                                Box(modifier = Modifier.padding(vertical = 8.dp), contentAlignment = Alignment.Center) {
+                                    Text(
+                                        text = label,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                                        fontSize = 13.sp
+                                    )
+                                }
+                            }
+                        }
+                    }
+
+                    // Delete & Move options
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        TextButton(
+                            onClick = {
+                                captureSnapshot()
+                                blocks.removeAt(targetIdx)
+                                activeImageSettingsIndex = null
+                            },
+                            colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error)
+                        ) {
+                            Icon(Icons.Default.Delete, contentDescription = null, modifier = Modifier.size(16.dp))
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text("Remove")
+                        }
+
+                        Button(
+                            onClick = { activeImageSettingsIndex = null },
+                            shape = RoundedCornerShape(8.dp)
+                        ) {
+                            Text("Done")
+                        }
+                    }
+                }
+            },
+            confirmButton = {}
+        )
     }
 
     // Color Tint Picker Dialog
