@@ -85,6 +85,31 @@ All notable changes to the AI Notes application are documented in this file.
   - "Place Between Paragraphs..." dialog (`📍`) to instantly teleport an image between any specific paragraphs.
   - Cursor-aware insertion: Inserting an image while editing text automatically splits the paragraph and places the image directly between the top and bottom halves.
 
+## [2.2.0] - 2026-09-29
+
+### Added & Changed
+- Functional Interactive Calendar Tab:
+  - Replaced the placeholder "Inbox" bottom navigation tab with a dedicated "Calendar" tab (`CalendarScreen.kt`).
+  - Real interactive monthly calendar grid with month-by-month navigation (`<` / `>`) and quick jump to "Today".
+  - Subtle visual marker dots indicate dates containing created notes, accurately mapped to `note.createdAt` timestamps from the local database.
+  - Distinct highlights for Today vs Selected Date.
+  - Tapping any date filters and displays notes created on that specific date in a scrollable list with title, content preview, creation time, category tag, tint, and attachment badges.
+  - Tapping a note opens it directly in the full editor.
+  - Clean empty state with "+ Create Note" action when a date has no notes.
+  - 100% offline, zero network / external dependencies.
+
+## [2.1.0] - 2026-09-29
+
+### Added & Enhanced
+- Hold-to-Drag Image Moving:
+  - Added `detectDragGesturesAfterLongPress` directly to note image blocks.
+  - Pressing and holding an image triggers haptic feedback, elevates the image (`translationY`, shadow, scaling), and lets users drag it smoothly up or down between text paragraphs.
+  - Interactive status pill indicates dynamic drag position and target landing spot.
+  - Normal 1-finger swipes scroll the note without delay; 2-finger pinches dynamically scale image size.
+- Updated Google Gemini Model Catalog:
+  - Added current official models: `gemini-3.5-flash`, `gemini-3.5-flash-lite`, `gemini-3.8-flash`, `gemini-3.1-pro-preview`, `gemini-2.5-flash`, `gemini-2.5-pro`, and `gemini-flash-latest`.
+  - Added Custom Model Identifier input field in the Gemini settings dialog so users can apply any custom model endpoint instantly.
+
 ## [2.0.0] - 2026-09-29
 
 ### Added & Enhanced

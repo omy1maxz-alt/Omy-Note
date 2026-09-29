@@ -26,6 +26,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AutoAwesome
+import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.EmojiEvents
@@ -57,6 +58,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.ui.calendar.CalendarScreen
 import com.example.ui.dashboard.DashboardScreen
 import com.example.ui.editor.NoteEditorScreen
 import com.example.ui.settings.AchievementsScreen
@@ -267,6 +269,17 @@ fun MainApp(
                     modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
                 )
 
+                NavigationDrawerItem(
+                    label = { Text("Calendar") },
+                    selected = currentScreen is Screen.Calendar,
+                    icon = { Icon(Icons.Default.CalendarMonth, contentDescription = null) },
+                    onClick = {
+                        viewModel.navigateTo(Screen.Calendar)
+                        coroutineScope.launch { drawerState.close() }
+                    },
+                    modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
+                )
+
                 // Categories list in drawer
                 categories.forEach { cat ->
                     NavigationDrawerItem(
@@ -315,6 +328,13 @@ fun MainApp(
                     snackbarHostState = snackbarHostState,
                     onOpenDrawer = { coroutineScope.launch { drawerState.open() } },
                     onExportBackupClick = { viewModel.navigateTo(Screen.Settings) }
+                )
+            }
+
+            is Screen.Calendar -> {
+                CalendarScreen(
+                    viewModel = viewModel,
+                    onBack = { viewModel.navigateBack() }
                 )
             }
 

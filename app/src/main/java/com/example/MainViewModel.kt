@@ -40,6 +40,7 @@ import java.util.UUID
 
 sealed class Screen {
     object Dashboard : Screen()
+    object Calendar : Screen()
     data class Editor(val noteId: String? = null, val initialCategory: String? = null) : Screen()
     object Settings : Screen()
     object Achievements : Screen()

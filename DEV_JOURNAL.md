@@ -143,3 +143,20 @@
 - Automatic Return to Dashboard on Save:
   - Pressing the "Save" button in the Top App Bar saves changes, hides the keyboard, and automatically navigates back to the main dashboard.
 
+## Phase 21: Full Interactive Calendar Tab Replacement for Inbox
+
+- Interactive Calendar Screen Architecture:
+  - Created `CalendarScreen.kt` and added `Screen.Calendar` to navigation backstack.
+  - Replaced the bottom navigation bar "Inbox" placeholder and top bar calendar action with direct navigation to `Screen.Calendar`.
+  - Also integrated "Calendar" item into the main `ModalNavigationDrawer`.
+- Calendar Functionality & Offline Timestamp Mapping:
+  - Interactive month view with previous/next month switching (`<` / `>`) and quick jump to "Today".
+  - Calendar grid dynamically adapts to user preference for start of week (Monday vs Sunday).
+  - Accurate date mapping from local `note.createdAt` timestamps in local database.
+  - Subtle orange dot indicators on dates with notes (showing up to 3 dots).
+  - Selected date filters and displays all notes created on that day in a scrollable list with full details (category, tint, attachments, time).
+  - Tapping any note card opens `NoteEditorScreen`.
+  - Empty state with "+ Create Note" action when a date has no notes.
+  - 100% offline, zero network requests.
+- Verified build and compilation status with zero errors.
+

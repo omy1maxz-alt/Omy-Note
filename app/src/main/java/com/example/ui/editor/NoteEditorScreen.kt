@@ -135,6 +135,8 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextRange
@@ -559,6 +561,7 @@ fun NoteEditorScreen(
     // Keyboard & Clipboard
     val keyboardController = LocalSoftwareKeyboardController.current
     val clipboardManager = LocalClipboardManager.current
+    val haptic = LocalHapticFeedback.current
     var showAiInstructionBox by remember { mutableStateOf(false) }
     var showAiDisabledDialog by remember { mutableStateOf(false) }
     var showAiResultPreview by remember { mutableStateOf(false) }
@@ -1799,6 +1802,8 @@ fun NoteEditorScreen(
                                 if (imgFile != null) BitmapLoader.loadScaledBitmap(imgFile, 800, 600) else null
                             }
                             var resizeScale by remember(block.id, block.imageScale) { mutableFloatStateOf(block.imageScale) }
+                            var dragOffsetY by remember(block.id) { mutableFloatStateOf(0f) }
+                            var isDraggingImage by remember(block.id) { mutableStateOf(false) }
 
                             val alignment = when (block.imageAlignment) {
                                 "left" -> Alignment.Start
@@ -1812,11 +1817,52 @@ fun NoteEditorScreen(
                                     .padding(vertical = 4.dp),
                                 horizontalAlignment = alignment
                             ) {
-                                // Clean Image Container: 2-Finger Pinch-to-Resize while 1-finger scrolls freely!
+                                // Real-time Visual Placement Indicator during Hold-to-Drag
+                                if (isDraggingImage) {
+                                    Surface(
+                                        shape = RoundedCornerShape(14.dp),
+                                        color = MaterialTheme.colorScheme.primary,
+                                        modifier = Modifier
+                                            .fillMaxWidth(resizeScale.coerceIn(0.2f, 1.0f))
+                                            .padding(bottom = 6.dp)
+                                    ) {
+                                        Row(
+                                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
+                                            verticalAlignment = Alignment.CenterVertically,
+                                            horizontalArrangement = Arrangement.Center
+                                        ) {
+                                            Icon(
+                                                imageVector = Icons.Default.SwapVert,
+                                                contentDescription = null,
+                                                tint = Color.White,
+                                                modifier = Modifier.size(16.dp)
+                                            )
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text(
+                                                text = if (dragOffsetY > 0) "📍 Moving image down between paragraphs..." else if (dragOffsetY < 0) "📍 Moving image up between paragraphs..." else "📍 Hold & drag vertically to move",
+                                                fontSize = 11.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = Color.White
+                                            )
+                                        }
+                                    }
+                                }
+
+                                // Clean Image Container: Hold to Drag to Move + 2-Finger Pinch to Resize + 1-finger non-blocking scroll!
                                 Box(
                                     modifier = Modifier
                                         .fillMaxWidth(resizeScale.coerceIn(0.2f, 1.0f))
+                                        .graphicsLayer {
+                                            if (isDraggingImage) {
+                                                translationY = dragOffsetY.coerceIn(-100f, 100f)
+                                                shadowElevation = 16f
+                                                scaleX = 1.03f
+                                                scaleY = 1.03f
+                                                alpha = 0.88f
+                                            }
+                                        }
                                         .clip(RoundedCornerShape(10.dp))
+                                        // 2-Finger Pinch-to-Resize
                                         .pointerInput(block.id) {
                                             awaitEachGesture {
                                                 do {
@@ -1842,6 +1888,43 @@ fun NoteEditorScreen(
                                                     }
                                                 } while (event.changes.any { it.pressed })
                                             }
+                                        }
+                                        // Hold to Drag to Move vertically between text paragraphs!
+                                        .pointerInput(block.id, blocks.size, index) {
+                                            detectDragGesturesAfterLongPress(
+                                                onDragStart = {
+                                                    isDraggingImage = true
+                                                    dragOffsetY = 0f
+                                                    haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                                                },
+                                                onDrag = { change, dragAmount ->
+                                                    change.consume()
+                                                    dragOffsetY += dragAmount.y
+                                                    if (dragOffsetY > 60f && index < blocks.lastIndex) {
+                                                        captureSnapshot()
+                                                        val item = blocks.removeAt(index)
+                                                        blocks.add(index + 1, item)
+                                                        dragOffsetY = 0f
+                                                        isDirty = true
+                                                        haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                                                    } else if (dragOffsetY < -60f && index > 0) {
+                                                        captureSnapshot()
+                                                        val item = blocks.removeAt(index)
+                                                        blocks.add(index - 1, item)
+                                                        dragOffsetY = 0f
+                                                        isDirty = true
+                                                        haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                                                    }
+                                                },
+                                                onDragEnd = {
+                                                    isDraggingImage = false
+                                                    dragOffsetY = 0f
+                                                },
+                                                onDragCancel = {
+                                                    isDraggingImage = false
+                                                    dragOffsetY = 0f
+                                                }
+                                            )
                                         }
                                 ) {
                                     if (bitmap != null) {

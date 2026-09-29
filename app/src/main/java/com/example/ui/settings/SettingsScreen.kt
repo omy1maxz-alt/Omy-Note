@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,7 +19,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.draw.clip
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.AutoAwesome
@@ -43,6 +46,8 @@ import androidx.compose.material.icons.filled.Upload
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -473,31 +478,99 @@ fun SettingsScreen(
 
     // Gemini Model Selection Dialog
     if (showModelDialog) {
+        val modelOptions = listOf(
+            Triple("gemini-3.5-flash", "Gemini 3.5 Flash", "Recommended • High intelligence, fast generation & smart search"),
+            Triple("gemini-3.5-flash-lite", "Gemini 3.5 Flash Lite", "Ultra-low latency & quick formatting"),
+            Triple("gemini-3.8-flash", "Gemini 3.8 Flash", "Advanced multi-step reasoning & agent tasks"),
+            Triple("gemini-3.1-pro-preview", "Gemini 3.1 Pro", "Deep analysis, creative writing & math"),
+            Triple("gemini-2.5-flash", "Gemini 2.5 Flash", "Fast, balanced general note assistant"),
+            Triple("gemini-2.5-pro", "Gemini 2.5 Pro", "Extended context & synthesis"),
+            Triple("gemini-flash-latest", "Gemini Flash (Latest)", "Always tracks the latest stable Flash release")
+        )
+        var customModelInput by remember { mutableStateOf(settings.geminiModel) }
+
         AlertDialog(
             onDismissRequest = { showModelDialog = false },
-            title = { Text("Select Gemini Model") },
+            title = {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(Icons.Default.AutoAwesome, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text("Select Gemini Model", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                }
+            },
             text = {
-                Column {
-                    listOf("gemini-2.5-flash", "gemini-3.5-flash", "gemini-3.1-pro-preview").forEach { m ->
-                        Row(
+                LazyColumn(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(380.dp)
+                ) {
+                    items(modelOptions) { (mId, mTitle, mDesc) ->
+                        val isSelected = settings.geminiModel == mId
+                        Surface(
+                            shape = RoundedCornerShape(10.dp),
+                            color = if (isSelected) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f) else Color.Transparent,
+                            border = if (isSelected) BorderStroke(1.dp, MaterialTheme.colorScheme.primary) else null,
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(vertical = 6.dp)
+                                .padding(vertical = 4.dp)
+                                .clip(RoundedCornerShape(10.dp))
                                 .clickable {
-                                    modelInput = m
-                                    viewModel.updateGeminiModel(m)
+                                    modelInput = mId
+                                    customModelInput = mId
+                                    viewModel.updateGeminiModel(mId)
                                     showModelDialog = false
-                                },
-                            verticalAlignment = Alignment.CenterVertically
+                                }
                         ) {
-                            Icon(
-                                imageVector = if (settings.geminiModel == m) Icons.Default.Check else Icons.Default.AutoAwesome,
-                                contentDescription = null,
-                                tint = if (settings.geminiModel == m) MaterialTheme.colorScheme.primary else Color.Gray,
-                                modifier = Modifier.size(20.dp)
+                            Row(
+                                modifier = Modifier.padding(10.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = isSelected,
+                                    onClick = {
+                                        modelInput = mId
+                                        customModelInput = mId
+                                        viewModel.updateGeminiModel(mId)
+                                        showModelDialog = false
+                                    }
+                                )
+                                Spacer(modifier = Modifier.width(8.dp))
+                                Column {
+                                    Text(mTitle, fontWeight = FontWeight.Bold, style = MaterialTheme.typography.bodyMedium)
+                                    Text(mId, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                                    Text(mDesc, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                }
+                            }
+                        }
+                    }
+
+                    item {
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text("Or type custom model identifier:", style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.SemiBold)
+                        Spacer(modifier = Modifier.height(6.dp))
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            OutlinedTextField(
+                                value = customModelInput,
+                                onValueChange = { customModelInput = it },
+                                placeholder = { Text("e.g. gemini-3.5-flash", fontSize = 12.sp) },
+                                singleLine = true,
+                                modifier = Modifier.weight(1f)
                             )
-                            Spacer(modifier = Modifier.width(10.dp))
-                            Text(m, fontWeight = if (settings.geminiModel == m) FontWeight.Bold else FontWeight.Normal)
+                            Button(
+                                onClick = {
+                                    if (customModelInput.isNotBlank()) {
+                                        viewModel.updateGeminiModel(customModelInput.trim())
+                                        showModelDialog = false
+                                    }
+                                },
+                                shape = RoundedCornerShape(8.dp)
+                            ) {
+                                Text("Apply")
+                            }
                         }
                     }
                 }

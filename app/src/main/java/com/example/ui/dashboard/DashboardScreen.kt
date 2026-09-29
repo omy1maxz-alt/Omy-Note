@@ -33,6 +33,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowDownward
 import androidx.compose.material.icons.filled.ArrowUpward
+import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.CallSplit
 import androidx.compose.material.icons.filled.CheckCircle
@@ -264,9 +265,9 @@ fun DashboardScreen(
                                 Icon(Icons.Default.Search, contentDescription = "Search", tint = Color.White)
                             }
 
-                            // Calendar icon with today's number
+                            // Calendar icon with today's number - navigates to Calendar tab
                             IconButton(onClick = {
-                                viewModel.showMessage("Filter: Showing today's notes")
+                                viewModel.navigateTo(Screen.Calendar)
                             }) {
                                 Box(contentAlignment = Alignment.Center) {
                                     Icon(
@@ -457,9 +458,9 @@ fun DashboardScreen(
                     )
                     NavigationBarItem(
                         selected = false,
-                        onClick = { viewModel.showMessage("Inbox is clear.") },
-                        icon = { Icon(Icons.Default.Inbox, contentDescription = "Inbox") },
-                        label = { Text("Inbox") }
+                        onClick = { viewModel.navigateTo(Screen.Calendar) },
+                        icon = { Icon(Icons.Default.CalendarMonth, contentDescription = "Calendar") },
+                        label = { Text("Calendar") }
                     )
                     NavigationBarItem(
                         selected = false,
