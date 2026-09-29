@@ -85,6 +85,12 @@ All notable changes to the AI Notes application are documented in this file.
   - "Place Between Paragraphs..." dialog (`📍`) to instantly teleport an image between any specific paragraphs.
   - Cursor-aware insertion: Inserting an image while editing text automatically splits the paragraph and places the image directly between the top and bottom halves.
 
+## [2.3.0] - 2026-09-29
+
+### Changed
+- Removed all residual input files and folders from `/incoming_app` (`Kie-monitor`, `README.md`) to maintain a clean workspace.
+- Preserved all fixed project exports in `/output_fixed`.
+
 ## [2.2.0] - 2026-09-29
 
 ### Added & Changed
