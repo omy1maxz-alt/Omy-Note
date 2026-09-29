@@ -124,3 +124,10 @@
 - Configured `gradle.properties` with `android.useAndroidX=true` and `android.nonTransitiveRClass=true`.
 - Verified compilation and build integrity.
 
+## Phase 18: Standard Android Debug Signing Fix for AndroidIDE
+
+- Removed custom `debugConfig` block which hardcoded `${rootDir}/debug.keystore`.
+- Removed explicit `signingConfig = signingConfigs.getByName("debugConfig")` from `debug` build type.
+- AGP now automatically utilizes the standard default Android debug keystore (`~/.android/debug.keystore`), allowing clean GitHub clones to run `assembleDebug` out of the box on AndroidIDE or any development machine without requiring a project-local keystore.
+- Verified compilation and APK packaging with zero errors.
+

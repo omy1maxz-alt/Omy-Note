@@ -85,6 +85,15 @@ All notable changes to the AI Notes application are documented in this file.
   - "Place Between Paragraphs..." dialog (`📍`) to instantly teleport an image between any specific paragraphs.
   - Cursor-aware insertion: Inserting an image while editing text automatically splits the paragraph and places the image directly between the top and bottom halves.
 
+## [1.9.1] - 2026-09-28
+
+### Fixed
+- Standardized Android Debug Signing Configuration:
+  - Removed custom `debugConfig` block referencing local root `debug.keystore`.
+  - Configured `debug` build type to use AGP's standard automatic debug keystore.
+  - Hardened release signing to dynamically activate only when `KEYSTORE_PATH` is defined and file exists.
+  - Guaranteed error-free `assembleDebug` execution when cloned freshly in AndroidIDE.
+
 ## [1.9.0] - 2026-09-28
 
 ### Changed
