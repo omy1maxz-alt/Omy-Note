@@ -225,10 +225,10 @@ fun ExpressiveAiIcon(
             val sRadius = w * 0.12f
             val sparklePath = Path().apply {
                 moveTo(sparkleX, sparkleY - sRadius)
-                quadraticTo(sparkleX, sparkleY, sparkleX + sRadius, sparkleY)
-                quadraticTo(sparkleX, sparkleY, sparkleX, sparkleY + sRadius)
-                quadraticTo(sparkleX, sparkleY, sparkleX - sRadius, sparkleY)
-                quadraticTo(sparkleX, sparkleY, sparkleX, sparkleY - sRadius)
+                quadraticBezierTo(sparkleX, sparkleY, sparkleX + sRadius, sparkleY)
+                quadraticBezierTo(sparkleX, sparkleY, sparkleX, sparkleY + sRadius)
+                quadraticBezierTo(sparkleX, sparkleY, sparkleX - sRadius, sparkleY)
+                quadraticBezierTo(sparkleX, sparkleY, sparkleX, sparkleY - sRadius)
             }
             drawPath(sparklePath, color = Color(0xFFFFD54F))
 
@@ -256,7 +256,7 @@ fun ExpressiveAiIcon(
             // Left eye curve ^
             val leftEyePath = Path().apply {
                 moveTo(leftEyeX - eyeWidth / 2, eyeY + strokeWidth * 0.35f)
-                quadraticTo(leftEyeX, eyeY - eyeWidth * 0.52f, leftEyeX + eyeWidth / 2, eyeY + strokeWidth * 0.35f)
+                quadraticBezierTo(leftEyeX, eyeY - eyeWidth * 0.52f, leftEyeX + eyeWidth / 2, eyeY + strokeWidth * 0.35f)
             }
             drawPath(
                 leftEyePath,
@@ -267,7 +267,7 @@ fun ExpressiveAiIcon(
             // Right eye curve ^
             val rightEyePath = Path().apply {
                 moveTo(rightEyeX - eyeWidth / 2, eyeY + strokeWidth * 0.35f)
-                quadraticTo(rightEyeX, eyeY - eyeWidth * 0.52f, rightEyeX + eyeWidth / 2, eyeY + strokeWidth * 0.35f)
+                quadraticBezierTo(rightEyeX, eyeY - eyeWidth * 0.52f, rightEyeX + eyeWidth / 2, eyeY + strokeWidth * 0.35f)
             }
             drawPath(
                 rightEyePath,
@@ -281,7 +281,7 @@ fun ExpressiveAiIcon(
             val mouthWidth = w * 0.18f
             val mouthPath = Path().apply {
                 moveTo(mouthCenterX - mouthWidth / 2, mouthY)
-                quadraticTo(mouthCenterX, mouthY + mouthWidth * 0.5f, mouthCenterX + mouthWidth / 2, mouthY)
+                quadraticBezierTo(mouthCenterX, mouthY + mouthWidth * 0.5f, mouthCenterX + mouthWidth / 2, mouthY)
             }
             drawPath(
                 mouthPath,

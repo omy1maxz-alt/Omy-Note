@@ -85,15 +85,15 @@ All notable changes to the AI Notes application are documented in this file.
   - "Place Between Paragraphs..." dialog (`📍`) to instantly teleport an image between any specific paragraphs.
   - Cursor-aware insertion: Inserting an image while editing text automatically splits the paragraph and places the image directly between the top and bottom halves.
 
-## [1.8.0] - 2026-09-28
+## [1.9.0] - 2026-09-28
 
-### Changed & Refined
-- Decluttered Editor Top Bar:
-  - Streamlined top bar actions to essential controls: `Undo`, `Redo`, prominent `Save` button, and `More Options` menu.
-  - Guaranteed touch ergonomics: Removed action overflow that previously crowded mobile viewports, ensuring the Save button is always fully accessible and operates reliably.
-  - Moved secondary tools (Find & Replace, Reading View, Note Colors, Fonts, Categories, Export) into the clean `More Options` overflow menu.
-- Borderless & Direct Image Presentation:
-  - Eliminated the box card wrapper around images for a modern, direct, native note presentation.
-  - Direct hold-to-drag interaction: Holding and dragging directly on the picture immediately triggers drag-and-drop repositioning between surrounding text blocks.
-  - Bottom-right corner resize handle: Freely drag the floating corner handle on the bottom-right corner of the picture to fluidly adjust the image scale.
-  - Clean floating delete button on the top-right corner.
+### Changed
+- Complete Build Configuration Alignment for AndroidIDE & On-Device Compilation:
+  - Gradle Wrapper configured to official Gradle 8.6 distribution (`gradle-8.6-bin.zip`).
+  - Android Gradle Plugin (AGP) pinned to `8.4.1`.
+  - Kotlin pinned to `1.9.23` with Compose compiler extension `1.5.11`.
+  - Java/JDK target compatibility set to JDK 17 (`JavaVersion.VERSION_17`, `jvmTarget = "17"`).
+  - SDK parameters set to `compileSdk 34`, `targetSdk 34`, and `minSdk 24`.
+  - Fully removed the `org.gradle.toolchains.foojay-resolver-convention` plugin and all automatic toolchain provisioning.
+  - Enabled `android.useAndroidX=true` and `android.nonTransitiveRClass=true` in `gradle.properties`.
+  - Verified clean compilation with zero warnings or errors.

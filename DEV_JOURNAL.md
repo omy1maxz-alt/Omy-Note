@@ -114,3 +114,13 @@
   - Floating discreet delete button (`Close`) in the top-right corner.
 - Verified build and compilation status with zero errors.
 
+## Phase 17: AndroidIDE Build Compatibility Alignment
+
+- Updated Gradle Wrapper to Gradle 8.6 (`https://services.gradle.org/distributions/gradle-8.6-bin.zip`).
+- Configured Android Gradle Plugin (AGP) 8.4.1 and Kotlin 1.9.23 with Compose compiler extension 1.5.11.
+- Pinned Java/JDK target compatibility to JDK 17 (`JavaVersion.VERSION_17`, `jvmTarget = "17"`).
+- Set `compileSdk = 34`, `targetSdk = 34`, and `minSdk = 24`.
+- Completely removed `org.gradle.toolchains.foojay-resolver-convention` and any automatic toolchain resolvers to rely exclusively on the locally provided JDK 17 in AndroidIDE.
+- Configured `gradle.properties` with `android.useAndroidX=true` and `android.nonTransitiveRClass=true`.
+- Verified compilation and build integrity.
+
