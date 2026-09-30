@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/language_selection_title">
+    <Preference
+        android:key="open_system_language_settings"
+        android:title="Open system language settings"
+        android:summary="Enable/disable languages in the main system settings" />
+    <PreferenceCategory
+        android:key="language_list"
+        android:title="Active input languages">
+    </PreferenceCategory>
+</PreferenceScreen>

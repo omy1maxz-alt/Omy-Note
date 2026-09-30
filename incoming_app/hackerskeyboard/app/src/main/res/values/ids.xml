@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="mode_normal" />
+    <item type="id" name="mode_url" />
+    <item type="id" name="mode_email" />
+    <item type="id" name="mode_im" />
+    <item type="id" name="mode_webentry" />
+    <item type="id" name="mode_symbols" />
+    <item type="id" name="mode_normal_with_settings_key" />
+    <item type="id" name="mode_url_with_settings_key" />
+    <item type="id" name="mode_email_with_settings_key" />
+    <item type="id" name="mode_im_with_settings_key" />
+    <item type="id" name="mode_webentry_with_settings_key" />
+    <item type="id" name="mode_symbols_with_settings_key" />
+</resources>

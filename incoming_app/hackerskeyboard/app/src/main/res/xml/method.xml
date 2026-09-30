@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+        android:settingsActivity="org.pocketworkstation.pckeyboard.LatinIMESettings"
+        android:isDefault="@bool/im_is_default">
+    <subtype android:label="Arabic" android:icon="@drawable/icon" android:imeSubtypeLocale="ar" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Bulgarian" android:icon="@drawable/icon" android:imeSubtypeLocale="bg" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Bulgarian (Standard)" android:icon="@drawable/icon" android:imeSubtypeLocale="bg_ST" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Catalan" android:icon="@drawable/icon" android:imeSubtypeLocale="ca" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Czech" android:icon="@drawable/icon" android:imeSubtypeLocale="cs" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Czech (QWERTY)" android:icon="@drawable/icon" android:imeSubtypeLocale="cs_QY" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Danish" android:icon="@drawable/icon" android:imeSubtypeLocale="da" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="German" android:icon="@drawable/icon" android:imeSubtypeLocale="de" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="German (Neo2)" android:icon="@drawable/icon" android:imeSubtypeLocale="de_NE" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Greek" android:icon="@drawable/icon" android:imeSubtypeLocale="el" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="English (US)" android:icon="@drawable/icon" android:imeSubtypeLocale="en_US" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="English (Carpalx)" android:icon="@drawable/icon" android:imeSubtypeLocale="en_CX" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="English (Dvorak)" android:icon="@drawable/icon" android:imeSubtypeLocale="en_DV" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="English (GB)" android:icon="@drawable/icon" android:imeSubtypeLocale="en_GB" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Spanish" android:icon="@drawable/icon" android:imeSubtypeLocale="es" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Spanish (Latin America)" android:icon="@drawable/icon" android:imeSubtypeLocale="es_LA" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Spanish (US)" android:icon="@drawable/icon" android:imeSubtypeLocale="es_US" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Persian" android:icon="@drawable/icon" android:imeSubtypeLocale="fa" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Finnish" android:icon="@drawable/icon" android:imeSubtypeLocale="fi" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="French" android:icon="@drawable/icon" android:imeSubtypeLocale="fr" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="French (Canada)" android:icon="@drawable/icon" android:imeSubtypeLocale="fr_CA" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Hebrew" android:icon="@drawable/icon" android:imeSubtypeLocale="he" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Croatian" android:icon="@drawable/icon" android:imeSubtypeLocale="hr" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Hungarian" android:icon="@drawable/icon" android:imeSubtypeLocale="hu" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Hungarian (QWERTY)" android:icon="@drawable/icon" android:imeSubtypeLocale="hu_QY" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Armenian" android:icon="@drawable/icon" android:imeSubtypeLocale="hy" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Indonesian" android:icon="@drawable/icon" android:imeSubtypeLocale="in" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Italian" android:icon="@drawable/icon" android:imeSubtypeLocale="it" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Hebrew (alternative)" android:icon="@drawable/icon" android:imeSubtypeLocale="iw" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Japanese" android:icon="@drawable/icon" android:imeSubtypeLocale="ja" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Georgian" android:icon="@drawable/icon" android:imeSubtypeLocale="ka" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Korean" android:icon="@drawable/icon" android:imeSubtypeLocale="ko" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Lao" android:icon="@drawable/icon" android:imeSubtypeLocale="lo" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Lithuanian" android:icon="@drawable/icon" android:imeSubtypeLocale="lt" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Latvian" android:icon="@drawable/icon" android:imeSubtypeLocale="lv" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Norwegian Bokmål" android:icon="@drawable/icon" android:imeSubtypeLocale="nb" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Dutch" android:icon="@drawable/icon" android:imeSubtypeLocale="nl" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Polish" android:icon="@drawable/icon" android:imeSubtypeLocale="pl" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Portuguese" android:icon="@drawable/icon" android:imeSubtypeLocale="pt" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Portuguese (Portugal)" android:icon="@drawable/icon" android:imeSubtypeLocale="pt_PT" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Romansh" android:icon="@drawable/icon" android:imeSubtypeLocale="rm" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Romanian" android:icon="@drawable/icon" android:imeSubtypeLocale="ro" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Russian" android:icon="@drawable/icon" android:imeSubtypeLocale="ru" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Russian (Phonetic)" android:icon="@drawable/icon" android:imeSubtypeLocale="ru_PH" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Sinhala" android:icon="@drawable/icon" android:imeSubtypeLocale="si" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Slovak" android:icon="@drawable/icon" android:imeSubtypeLocale="sk" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Slovak (QWERTY)" android:icon="@drawable/icon" android:imeSubtypeLocale="sk_QY" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Slovenian" android:icon="@drawable/icon" android:imeSubtypeLocale="sl" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Serbian" android:icon="@drawable/icon" android:imeSubtypeLocale="sr" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Swedish" android:icon="@drawable/icon" android:imeSubtypeLocale="sv" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Tamil" android:icon="@drawable/icon" android:imeSubtypeLocale="ta" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Thai" android:icon="@drawable/icon" android:imeSubtypeLocale="th" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Tagalog" android:icon="@drawable/icon" android:imeSubtypeLocale="tl" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Turkish" android:icon="@drawable/icon" android:imeSubtypeLocale="tr" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Ukrainian" android:icon="@drawable/icon" android:imeSubtypeLocale="uk" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Vietnamese" android:icon="@drawable/icon" android:imeSubtypeLocale="vi" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Chinese (Simplified)" android:icon="@drawable/icon" android:imeSubtypeLocale="zh_CN" android:imeSubtypeMode="keyboard" />
+    <subtype android:label="Chinese (Traditional)" android:icon="@drawable/icon" android:imeSubtypeLocale="zh_TW" android:imeSubtypeMode="keyboard" />
+</input-method>

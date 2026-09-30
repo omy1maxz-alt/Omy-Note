@@ -1,0 +1,1691 @@
+Run tasks : [:app:assembleDebug]
+The client will now receive all logging from the daemon (pid: 2918). The daemon log file: /data/user/0/com.itsaky.androidide/files/home/.gradle/daemon/8.0/daemon-2918.out.log
+Starting 2nd build in daemon [uptime: 24 mins 29.121 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 1.5 GiB]
+Closing daemon's stdin at end of input.
+The daemon will no longer process any standard input.
+Using 8 worker leases.
+Watching the file system is configured to be enabled if available
+File system watching is inactive
+The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Starting Build
+Settings evaluated using settings file '/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/settings.gradle'.
+Projects loaded. Root project using build file '/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/build.gradle'.
+Included projects: [root project 'hackerskeyboard', project ':app']
+
+> Configure project :
+Evaluating root project 'hackerskeyboard' using build file '/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/build.gradle'.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+
+> Configure project :app
+Evaluating project ':app' using build file '/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/build.gradle'.
+WARNING: The option setting 'android.aapt2FromMavenOverride=/data/user/0/com.itsaky.androidide/files/home/.androidide/aapt2' is experimental.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle76 variant
+Trying to apply plugin 'com.itsaky.androidide' to project ':app'
+LogSender is disabled. Dependency will not be added to project ':app'.
+All projects evaluated.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Task path ':app:assembleDebug' matched project ':app'
+Task name matched 'assembleDebug'
+Selected primary task 'assembleDebug' from project :app
+The configuration :app:debugApiElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:debugRuntimeElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:kotlinCompilerClasspath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:kotlinCompilerClasspath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:releaseApiElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:releaseRuntimeElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:dexBuilderDebug', task ':app:desugarDebugFileDependencies', task ':app:mergeExtDexDebug', task ':app:mergeDexDebug', task ':app:mergeDebugJniLibFolders', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug']
+Tasks that were excluded: []
+Resolve mutations for :app:preBuild (Thread[Execution worker,5,main]) started.
+:app:preBuild (Thread[included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[Execution worker,5,main]) started.
+:app:preDebugBuild (Thread[Execution worker,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[Execution worker,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[Execution worker,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+:app:checkDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with AarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with AarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with ExtractAarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with AarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with ExtractAarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with AarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with ExtractAarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with AarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 as it is up-to-date.
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 because:
+  Build cache is disabled
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with ExtractAarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 as it is up-to-date.
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 because:
+  Build cache is disabled
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 as it is up-to-date.
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with ExtractAarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with AarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with AarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with IdentityTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with ExtractAarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 as it is up-to-date.
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 because:
+  Build cache is disabled
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with IdentityTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 as it is up-to-date.
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with ExtractAarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 as it is up-to-date.
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 because:
+  Build cache is disabled
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 as it is up-to-date.
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with AarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 as it is up-to-date.
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 as it is up-to-date.
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 as it is up-to-date.
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with IdentityTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 because:
+  Build cache is disabled
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with IdentityTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with ExtractAarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with AarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 as it is up-to-date.
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with ExtractAarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 as it is up-to-date.
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with ExtractAarTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 as it is up-to-date.
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 because:
+  Build cache is disabled
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with ExtractAarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 as it is up-to-date.
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 as it is up-to-date.
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 as it is up-to-date.
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[Execution worker Thread 4,5,main]) started.
+:app:generateDebugResValues (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[Execution worker Thread 4,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with ExtractAarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with AarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with AarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with ExtractAarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with AarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with ExtractAarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with AarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with ExtractAarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with AarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 because:
+  Build cache is disabled
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 as it is up-to-date.
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 as it is up-to-date.
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with AarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with ExtractAarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with AarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with ExtractAarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with AarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with IdentityTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with ExtractAarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with AarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 because:
+  Build cache is disabled
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 as it is up-to-date.
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 because:
+  Build cache is disabled
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 as it is up-to-date.
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 because:
+  Build cache is disabled
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 as it is up-to-date.
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 because:
+  Build cache is disabled
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 as it is up-to-date.
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 because:
+  Build cache is disabled
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with ExtractAarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 as it is up-to-date.
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with AarTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with ExtractAarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 because:
+  Build cache is disabled
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with AarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 as it is up-to-date.
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with ExtractAarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with IdentityTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with ExtractAarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with AarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 as it is up-to-date.
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with IdentityTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with IdentityTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with ExtractAarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with AarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 as it is up-to-date.
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+:app:generateDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Skipping task ':app:generateDebugResources' as it has no actions.
+Resolve mutations for :app:mergeDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+:app:mergeDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Transforming android.jar with PlatformAttrTransform
+Caching disabled for PlatformAttrTransform: /data/user/0/com.itsaky.androidide/files/home/android-sdk/platforms/android-34/android.jar because:
+  Build cache is disabled
+Skipping PlatformAttrTransform: /data/user/0/com.itsaky.androidide/files/home/android-sdk/platforms/android-34/android.jar as it is up-to-date.
+Transforming android.jar with PlatformAttrTransform
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 2,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 6,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with ExtractAarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with AarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with AarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with ExtractAarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with AarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with ExtractAarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with AarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with ExtractAarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with AarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with AarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with ExtractAarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with AarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with ExtractAarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with AarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with IdentityTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with ExtractAarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with AarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with IdentityTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with ExtractAarTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with AarTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with ExtractAarTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with AarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with ExtractAarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with IdentityTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with ExtractAarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with AarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with IdentityTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with IdentityTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with ExtractAarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with AarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with ExtractAarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with AarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with AarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with ExtractAarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with AarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with ExtractAarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with AarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with ExtractAarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with AarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 because:
+  Build cache is disabled
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with AarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 as it is up-to-date.
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with ExtractAarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 because:
+  Build cache is disabled
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 as it is up-to-date.
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with ExtractAarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with AarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with IdentityTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with ExtractAarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with AarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 as it is up-to-date.
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 as it is up-to-date.
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 as it is up-to-date.
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 because:
+  Build cache is disabled
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 as it is up-to-date.
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 as it is up-to-date.
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 as it is up-to-date.
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 because:
+  Build cache is disabled
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with IdentityTransform
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 as it is up-to-date.
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with ExtractAarTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 because:
+  Build cache is disabled
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with ExtractAarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 as it is up-to-date.
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with AarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with ExtractAarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with IdentityTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 as it is up-to-date.
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with ExtractAarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with AarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with IdentityTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with IdentityTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with ExtractAarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with AarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 as it is up-to-date.
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 as it is up-to-date.
+Caching disabled for AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 as it is up-to-date.
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[included builds,5,main]) started.
+:app:processDebugManifest (Thread[included builds,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with ExtractAarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with AarResourcesCompilerTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with AarResourcesCompilerTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with ExtractAarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with AarResourcesCompilerTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with ExtractAarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with AarResourcesCompilerTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with ExtractAarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with AarResourcesCompilerTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarResourcesCompilerTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarResourcesCompilerTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarResourcesCompilerTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with AarResourcesCompilerTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with ExtractAarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with AarResourcesCompilerTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarResourcesCompilerTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with ExtractAarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with AarResourcesCompilerTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with IdentityTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with ExtractAarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with AarResourcesCompilerTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarResourcesCompilerTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarResourcesCompilerTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarResourcesCompilerTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarResourcesCompilerTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarResourcesCompilerTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarResourcesCompilerTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarResourcesCompilerTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarResourcesCompilerTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarResourcesCompilerTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarResourcesCompilerTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarResourcesCompilerTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarResourcesCompilerTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarResourcesCompilerTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with IdentityTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with ExtractAarTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with AarResourcesCompilerTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with ExtractAarTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with AarResourcesCompilerTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with ExtractAarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with AarResourcesCompilerTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarResourcesCompilerTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarResourcesCompilerTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with IdentityTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with ExtractAarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with AarResourcesCompilerTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with AarResourcesCompilerTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarResourcesCompilerTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with IdentityTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarResourcesCompilerTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with IdentityTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with ExtractAarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with AarResourcesCompilerTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarResourcesCompilerTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarResourcesCompilerTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarResourcesCompilerTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarResourcesCompilerTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarResourcesCompilerTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarResourcesCompilerTransform
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 because:
+  Build cache is disabled
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 as it is up-to-date.
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 because:
+  Build cache is disabled
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 as it is up-to-date.
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 because:
+  Build cache is disabled
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 as it is up-to-date.
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 because:
+  Build cache is disabled
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 as it is up-to-date.
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 because:
+  Build cache is disabled
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 as it is up-to-date.
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 as it is up-to-date.
+Caching disabled for AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 because:
+  Build cache is disabled
+Skipping AarResourcesCompilerTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 as it is up-to-date.
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with ExtractAarTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with LibrarySymbolTableTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with ExtractAarTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with LibrarySymbolTableTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with ExtractAarTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with LibrarySymbolTableTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with ExtractAarTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with LibrarySymbolTableTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with ExtractAarTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with LibrarySymbolTableTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with LibrarySymbolTableTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with LibrarySymbolTableTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with LibrarySymbolTableTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with LibrarySymbolTableTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with ExtractAarTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with LibrarySymbolTableTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with LibrarySymbolTableTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with IdentityTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with ExtractAarTransform
+Transforming emoji2-views-helper-1.2.0.aar (androidx.emoji2:emoji2-views-helper:1.2.0) with LibrarySymbolTableTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with IdentityTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with ExtractAarTransform
+Transforming emoji2-1.2.0.aar (androidx.emoji2:emoji2:1.2.0) with LibrarySymbolTableTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with LibrarySymbolTableTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with LibrarySymbolTableTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with LibrarySymbolTableTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with LibrarySymbolTableTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with LibrarySymbolTableTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with LibrarySymbolTableTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with LibrarySymbolTableTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with LibrarySymbolTableTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with LibrarySymbolTableTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with LibrarySymbolTableTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with LibrarySymbolTableTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with LibrarySymbolTableTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with ExtractAarTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with LibrarySymbolTableTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with IdentityTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with ExtractAarTransform
+Transforming customview-poolingcontainer-1.0.0.aar (androidx.customview:customview-poolingcontainer:1.0.0) with LibrarySymbolTableTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with ExtractAarTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with LibrarySymbolTableTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with ExtractAarTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with LibrarySymbolTableTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with LibrarySymbolTableTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with LibrarySymbolTableTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with IdentityTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with ExtractAarTransform
+Transforming lifecycle-process-2.4.1.aar (androidx.lifecycle:lifecycle-process:2.4.1) with LibrarySymbolTableTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with LibrarySymbolTableTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with LibrarySymbolTableTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with IdentityTransform
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/0af0bc1b403d9da421bbff60571e1c29/transformed/constraintlayout-2.1.4 as it is up-to-date.
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with LibrarySymbolTableTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with IdentityTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with ExtractAarTransform
+Transforming tracing-1.0.0.aar (androidx.tracing:tracing:1.0.0) with LibrarySymbolTableTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 because:
+  Build cache is disabled
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with LibrarySymbolTableTransform
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/920cf6a4fbda93e9e29ab8b6a511594c/transformed/appcompat-resources-1.6.1 as it is up-to-date.
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with LibrarySymbolTableTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with ExtractAarTransform
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 because:
+  Build cache is disabled
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with LibrarySymbolTableTransform
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c5da274d000b256ff27528c8cf2597d0/transformed/lifecycle-viewmodel-2.5.1 as it is up-to-date.
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with LibrarySymbolTableTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with LibrarySymbolTableTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with LibrarySymbolTableTransform
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/fe082b446679aac23bdc4ff645f2d3c2/transformed/activity-1.6.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7fc91de891c6b5566e74d31a0a9601df/transformed/loader-1.0.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 because:
+  Build cache is disabled
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/079ce3100a890a38255454a3bd939217/transformed/fragment-1.3.6 as it is up-to-date.
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3041db2b3c4d5a99015d7d372babb24c/transformed/appcompat-1.6.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/25eb14bc2ba2203b27677c358571c39b/transformed/interpolator-1.0.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/45090ac61bde69d42a649edfb327b8c2/transformed/lifecycle-runtime-2.5.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4c0ec1fa691116fd99abd6e05fe24cfc/transformed/versionedparcelable-1.1.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 because:
+  Build cache is disabled
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c2cd748854234d7bd3bc241e24ddc9ad/transformed/tracing-1.0.0 as it is up-to-date.
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/e5c12aa0d0a99e7645a84568451d182a/transformed/lifecycle-viewmodel-savedstate-2.5.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 because:
+  Build cache is disabled
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f5797585854be9f3169957172ded7dd1/transformed/lifecycle-livedata-2.0.0 as it is up-to-date.
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b2d399e0e504da10995b43cf45cf5481/transformed/startup-runtime-1.1.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0d2eb3e7d68f001ac0329e5cf5b3549/transformed/lifecycle-livedata-core-2.5.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3017631b30c6cc1151343bcfc275223c/transformed/core-1.9.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3bac44f44210c1ffdf75cfd61fbb9523/transformed/cursoradapter-1.0.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b24435699b4bc58a9f5087f7100501a5/transformed/lifecycle-process-2.4.1 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 because:
+  Build cache is disabled
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c0ee41184ab1adc3e9c34e07a27d9b5b/transformed/savedstate-1.2.0 as it is up-to-date.
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2cd9a088bc9e2511e8b1c2b27d4d33b7/transformed/core-runtime-2.1.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/df7f9b0ffbeb934466df5b84fc2e95cd/transformed/customview-poolingcontainer-1.0.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/daf22148b15e596fe1acad74fb064d8b/transformed/annotation-experimental-1.3.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b05fff9277b76858d1438c51ec5f4e0/transformed/core-ktx-1.9.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 because:
+  Build cache is disabled
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 because:
+  Build cache is disabled
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/edee0c3d65a90d198832df05a6304cb9/transformed/vectordrawable-1.1.0 as it is up-to-date.
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/96a51adc9ed51c4a1743c89c15c84dc5/transformed/viewpager-1.0.0 as it is up-to-date.
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/7b8201ecddbec460496c5ee43fcd9bae/transformed/customview-1.0.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b8466ebbc15708b0f92e6bba5b8c0ccc/transformed/vectordrawable-animated-1.1.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/44c9e8b3535a9aaa765ab7a7f776c357/transformed/emoji2-1.2.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/46aaf12ec442739049236333fe79d9c9/transformed/recyclerview-1.3.2 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/f18512ffa785b026d066984c02c8da83/transformed/emoji2-views-helper-1.2.0 as it is up-to-date.
+Caching disabled for LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 because:
+  Build cache is disabled
+Skipping LibrarySymbolTableTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/cc538509052be709538b5c62862187a3/transformed/drawerlayout-1.0.0 as it is up-to-date.
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[Execution worker Thread 3,5,main]) started.
+:app:compileDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugKotlin NO-SOURCE
+Skipping task ':app:compileDebugKotlin' as it has no source files and no previous output files.
+Resolve mutations for :app:javaPreCompileDebug (Thread[Execution worker Thread 2,5,main]) started.
+:app:javaPreCompileDebug (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':app:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :app:compileDebugJavaWithJavac (Thread[Execution worker Thread 2,5,main]) started.
+:app:compileDebugJavaWithJavac (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugJavaWithJavac
+Transforming voiceimeutils.jar with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with IdentityTransform
+Transforming appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) with AarToClassTransform
+Caching disabled for IdentityTransform: /storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/libs/voiceimeutils.jar because:
+  Build cache is disabled
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with IdentityTransform
+Transforming fragment-1.3.6.aar (androidx.fragment:fragment:1.3.6) with AarToClassTransform
+Skipping IdentityTransform: /storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/libs/voiceimeutils.jar as it is up-to-date.
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with IdentityTransform
+Transforming activity-1.6.0.aar (androidx.activity:activity:1.6.0) with AarToClassTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-savedstate-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1) with AarToClassTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with IdentityTransform
+Transforming core-ktx-1.9.0.aar (androidx.core:core-ktx:1.9.0) with AarToClassTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with IdentityTransform
+Transforming savedstate-1.2.0.aar (androidx.savedstate:savedstate:1.2.0) with AarToClassTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with IdentityTransform
+Transforming kotlinx-coroutines-core-jvm-1.6.1.jar (org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1) with IdentityTransform
+Transforming voiceimeutils.jar with IdentityTransform
+Transforming kotlinx-coroutines-android-1.6.1.jar (org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1) with IdentityTransform
+Transforming recyclerview-1.3.2.aar (androidx.recyclerview:recyclerview:1.3.2) with AarToClassTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with IdentityTransform
+Transforming appcompat-resources-1.6.1.aar (androidx.appcompat:appcompat-resources:1.6.1) with AarToClassTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with IdentityTransform
+Transforming drawerlayout-1.0.0.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarToClassTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with IdentityTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarToClassTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarToClassTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarToClassTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with IdentityTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarToClassTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with IdentityTransform
+Transforming vectordrawable-animated-1.1.0.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarToClassTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.5.1/35860ecab7b49f43ab38d9afffbf37847192e156/lifecycle-viewmodel-savedstate-2.5.1.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.5.1/35860ecab7b49f43ab38d9afffbf37847192e156/lifecycle-viewmodel-savedstate-2.5.1.aar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.1/6c7577004b7ebbee5ed87d512b578dd20e3c8c31/appcompat-1.6.1.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.1/6c7577004b7ebbee5ed87d512b578dd20e3c8c31/appcompat-1.6.1.aar as it is up-to-date.
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.6.0/4bee9777c02790cb99e68cd397036b1d5508a630/activity-1.6.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.6.0/4bee9777c02790cb99e68cd397036b1d5508a630/activity-1.6.0.aar as it is up-to-date.
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.1/4e61fcdcc508cbaa37c4a284a50205d7c7767e37/kotlinx-coroutines-android-1.6.1.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.1/4e61fcdcc508cbaa37c4a284a50205d7c7767e37/kotlinx-coroutines-android-1.6.1.jar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.3.6/6391fc504e7c0f24051ac8b9da3f0ba4d1241dff/fragment-1.3.6.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.3.6/6391fc504e7c0f24051ac8b9da3f0ba4d1241dff/fragment-1.3.6.aar as it is up-to-date.
+Transforming kotlinx-coroutines-android-1.6.1.jar (org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarToClassTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with IdentityTransform
+Transforming vectordrawable-1.1.0.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarToClassTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with IdentityTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarToClassTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarToClassTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarToClassTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarToClassTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarToClassTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarToClassTransform
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable-animated/1.1.0/fcda1161354501471c30a4e077af6b5c4d4eddc6/vectordrawable-animated-1.1.0.aar because:
+  Build cache is disabled
+Transforming core-1.9.0.aar (androidx.core:core:1.9.0) with AarToClassTransform
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable-animated/1.1.0/fcda1161354501471c30a4e077af6b5c4d4eddc6/vectordrawable-animated-1.1.0.aar as it is up-to-date.
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarToClassTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarToClassTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with IdentityTransform
+Transforming lifecycle-viewmodel-2.5.1.aar (androidx.lifecycle:lifecycle-viewmodel:2.5.1) with AarToClassTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with IdentityTransform
+Transforming gson-2.8.9.jar (com.google.code.gson:gson:2.8.9) with IdentityTransform
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with IdentityTransform
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.1/97fd74ccf54a863d221956ffcd21835e168e2aaa/kotlinx-coroutines-core-jvm-1.6.1.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.1/97fd74ccf54a863d221956ffcd21835e168e2aaa/kotlinx-coroutines-core-jvm-1.6.1.jar as it is up-to-date.
+Transforming cursoradapter-1.0.0.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarToClassTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with IdentityTransform
+Transforming lifecycle-runtime-2.5.1.aar (androidx.lifecycle:lifecycle-runtime:2.5.1) with AarToClassTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarToClassTransform
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.3.2/e1d76099dbbd88ee0ee7c39cfa96ed0ea01bc8ad/recyclerview-1.3.2.aar because:
+  Build cache is disabled
+Transforming lifecycle-livedata-2.0.0.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarToClassTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarToClassTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.3.2/e1d76099dbbd88ee0ee7c39cfa96ed0ea01bc8ad/recyclerview-1.3.2.aar as it is up-to-date.
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarToClassTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with IdentityTransform
+Transforming lifecycle-livedata-core-2.5.1.aar (androidx.lifecycle:lifecycle-livedata-core:2.5.1) with AarToClassTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarToClassTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with IdentityTransform
+Transforming constraintlayout-2.1.4.aar (androidx.constraintlayout:constraintlayout:2.1.4) with AarToClassTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable/1.1.0/eac7a364fff534035a2a6cb17770a1288315f69f/vectordrawable-1.1.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable/1.1.0/eac7a364fff534035a2a6cb17770a1288315f69f/vectordrawable-1.1.0.aar as it is up-to-date.
+Transforming kotlinx-coroutines-core-jvm-1.6.1.jar (org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.customview/customview/1.0.0/30f5ff6075d112f8076e733b24410e68159735b6/customview-1.0.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.customview/customview/1.0.0/30f5ff6075d112f8076e733b24410e68159735b6/customview-1.0.0.aar as it is up-to-date.
+Transforming core-common-2.1.0.jar (androidx.arch.core:core-common:2.1.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/1f90e13820f96c2fb868f9674079a551678d68b2/viewpager-1.0.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/1f90e13820f96c2fb868f9674079a551678d68b2/viewpager-1.0.0.aar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/2df0e03029caae7863ccb4825addaadc8ab6780c/core-runtime-2.1.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/2df0e03029caae7863ccb4825addaadc8ab6780c/core-runtime-2.1.0.aar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.5.1/81fe3e2d11ed12be941b71dbea223aa3e64c6903/lifecycle-viewmodel-2.5.1.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.5.1/81fe3e2d11ed12be941b71dbea223aa3e64c6903/lifecycle-viewmodel-2.5.1.aar as it is up-to-date.
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar as it is up-to-date.
+Transforming core-common-2.1.0.jar (androidx.arch.core:core-common:2.1.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/18e18071e7715679e0593c570217edeb5ca48b9e/versionedparcelable-1.1.1.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/18e18071e7715679e0593c570217edeb5ca48b9e/versionedparcelable-1.1.1.aar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata/2.0.0/c17007cd0b21d6401910b0becdd16c438c68a9af/lifecycle-livedata-2.0.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata/2.0.0/c17007cd0b21d6401910b0becdd16c438c68a9af/lifecycle-livedata-2.0.0.aar as it is up-to-date.
+Transforming kotlin-stdlib-common-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0) with IdentityTransform
+Transforming kotlin-stdlib-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) with IdentityTransform
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar as it is up-to-date.
+Transforming kotlin-stdlib-common-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0) with IdentityTransform
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.5.1/26e3d5564fe875473320ad0c15cab765099be8c2/lifecycle-runtime-2.5.1.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.5.1/26e3d5564fe875473320ad0c15cab765099be8c2/lifecycle-runtime-2.5.1.aar as it is up-to-date.
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar because:
+  Build cache is disabled
+Transforming kotlin-stdlib-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) with IdentityTransform
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar as it is up-to-date.
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.5.1/a55defc29b52baf41304c058c91dba38b5c7651c/lifecycle-livedata-core-2.5.1.aar because:
+  Build cache is disabled
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.9.0/aa21c91d72e5d2a8dcc00c029ec65fc8d804ce02/core-1.9.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.9.0/aa21c91d72e5d2a8dcc00c029ec65fc8d804ce02/core-1.9.0.aar as it is up-to-date.
+Transforming annotation-1.3.0.jar (androidx.annotation:annotation:1.3.0) with IdentityTransform
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.5.1/a55defc29b52baf41304c058c91dba38b5c7651c/lifecycle-livedata-core-2.5.1.aar as it is up-to-date.
+Transforming collection-1.1.0.jar (androidx.collection:collection:1.1.0) with IdentityTransform
+Transforming lifecycle-common-2.5.1.jar (androidx.lifecycle:lifecycle-common:2.5.1) with IdentityTransform
+Transforming kotlin-stdlib-jdk7-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/8a01fa254a23b9388571eb6334b03707c7d122d7/interpolator-1.0.0.aar because:
+  Build cache is disabled
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/8a01fa254a23b9388571eb6334b03707c7d122d7/interpolator-1.0.0.aar as it is up-to-date.
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar as it is up-to-date.
+Transforming annotation-1.3.0.jar (androidx.annotation:annotation:1.3.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout/2.1.4/b7ad5eca28aa9e7c4ea1a7e256c7ee4401a031f/constraintlayout-2.1.4.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout/2.1.4/b7ad5eca28aa9e7c4ea1a7e256c7ee4401a031f/constraintlayout-2.1.4.aar as it is up-to-date.
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/8a432c1d6825781e21a02db2e2c33c5fde2833b9/gson-2.8.9.jar because:
+  Build cache is disabled
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/8a432c1d6825781e21a02db2e2c33c5fde2833b9/gson-2.8.9.jar as it is up-to-date.
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.cursoradapter/cursoradapter/1.0.0/74014983a86b83cbce534dec4e7aa9312f5f5d82/cursoradapter-1.0.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.cursoradapter/cursoradapter/1.0.0/74014983a86b83cbce534dec4e7aa9312f5f5d82/cursoradapter-1.0.0.aar as it is up-to-date.
+Transforming kotlin-stdlib-jdk7-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.core/core-ktx/1.9.0/b56f6b1bcb7882a9933c963907818da2094ae3a4/core-ktx-1.9.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.core/core-ktx/1.9.0/b56f6b1bcb7882a9933c963907818da2094ae3a4/core-ktx-1.9.0.aar as it is up-to-date.
+Transforming kotlin-stdlib-jdk8-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0) with IdentityTransform
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-experimental/1.3.0/5087c6f545117dcd474e69e1a93cacec9d7334af/annotation-experimental-1.3.0.aar because:
+  Build cache is disabled
+Transforming gson-2.8.9.jar (com.google.code.gson:gson:2.8.9) with IdentityTransform
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-experimental/1.3.0/5087c6f545117dcd474e69e1a93cacec9d7334af/annotation-experimental-1.3.0.aar as it is up-to-date.
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.5.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.5.1.jar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.5.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.5.1.jar as it is up-to-date.
+Transforming lifecycle-common-2.5.1.jar (androidx.lifecycle:lifecycle-common:2.5.1) with IdentityTransform
+Transforming collection-1.1.0.jar (androidx.collection:collection:1.1.0) with IdentityTransform
+Caching disabled for IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar because:
+  Build cache is disabled
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.drawerlayout/drawerlayout/1.0.0/dd02c7e207136e1272b33815cc61e57676ed13a2/drawerlayout-1.0.0.aar because:
+  Build cache is disabled
+Skipping IdentityTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar as it is up-to-date.
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.drawerlayout/drawerlayout/1.0.0/dd02c7e207136e1272b33815cc61e57676ed13a2/drawerlayout-1.0.0.aar as it is up-to-date.
+Transforming kotlin-stdlib-jdk8-1.8.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0) with IdentityTransform
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.savedstate/savedstate/1.2.0/bcaeef765339b976946cc9e891536713af651ebc/savedstate-1.2.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.savedstate/savedstate/1.2.0/bcaeef765339b976946cc9e891536713af651ebc/savedstate-1.2.0.aar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.6.1/3fe43025e50b556f319b1ff82a730d5a376a31e/appcompat-resources-1.6.1.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.6.1/3fe43025e50b556f319b1ff82a730d5a376a31e/appcompat-resources-1.6.1.aar as it is up-to-date.
+Caching disabled for AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/8af8b6cec0da85c207d03e15840e0722cbc71e70/loader-1.0.0.aar because:
+  Build cache is disabled
+Skipping AarToClassTransform: /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/8af8b6cec0da85c207d03e15840e0722cbc71e70/loader-1.0.0.aar as it is up-to-date.
+Transforming voiceimeutils.jar with IdentityTransform
+Transforming voiceimeutils.jar with IdentityTransform
+Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Task ':app:compileDebugJavaWithJavac' is not up-to-date because:
+  Input property 'classpath' file /storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar has changed.
+  Input property 'stableSources' file /storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/LatinIME.java has changed.
+Transforming voiceimeutils.jar with IdentityTransform
+Transforming voiceimeutils.jar with IdentityTransform
+Created classpath snapshot for incremental compilation in 0.088 secs.
+file or directory '/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/debug/java', not found
+Compiling with toolchain '/data/data/com.itsaky.androidide/files/usr/opt/openjdk-17.0'.
+file or directory '/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/debug/java', not found
+Compiling with JDK Java compiler API.
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:46: error: cannot find symbol
+    public static final int KEYBOARDMODE_NORMAL = R.id.mode_normal;
+                                                      ^
+  symbol:   variable mode_normal
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:47: error: cannot find symbol
+    public static final int KEYBOARDMODE_URL = R.id.mode_url;
+                                                   ^
+  symbol:   variable mode_url
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:48: error: cannot find symbol
+    public static final int KEYBOARDMODE_EMAIL = R.id.mode_email;
+                                                     ^
+  symbol:   variable mode_email
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:49: error: cannot find symbol
+    public static final int KEYBOARDMODE_IM = R.id.mode_im;
+                                                  ^
+  symbol:   variable mode_im
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:50: error: cannot find symbol
+    public static final int KEYBOARDMODE_WEB = R.id.mode_webentry;
+                                                   ^
+  symbol:   variable mode_webentry
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:52: error: cannot find symbol
+    public static final int KEYBOARDMODE_NORMAL_WITH_SETTINGS_KEY = R.id.mode_normal_with_settings_key;
+                                                                        ^
+  symbol:   variable mode_normal_with_settings_key
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:53: error: cannot find symbol
+    public static final int KEYBOARDMODE_URL_WITH_SETTINGS_KEY = R.id.mode_url_with_settings_key;
+                                                                     ^
+  symbol:   variable mode_url_with_settings_key
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:54: error: cannot find symbol
+    public static final int KEYBOARDMODE_EMAIL_WITH_SETTINGS_KEY = R.id.mode_email_with_settings_key;
+                                                                       ^
+  symbol:   variable mode_email_with_settings_key
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:55: error: cannot find symbol
+    public static final int KEYBOARDMODE_IM_WITH_SETTINGS_KEY = R.id.mode_im_with_settings_key;
+                                                                    ^
+  symbol:   variable mode_im_with_settings_key
+  location: class id
+/storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/KeyboardSwitcher.java:56: error: cannot find symbol
+    public static final int KEYBOARDMODE_WEB_WITH_SETTINGS_KEY = R.id.mode_webentry_with_settings_key;
+                                                                     ^
+  symbol:   variable mode_webentry_with_settings_key
+  location: class id
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /storage/emulated/0/AndroidIDEProjects/hackerskeyboard/app/src/main/java/org/pocketworkstation/pckeyboard/LatinIME.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors
+Incremental compilation of 86 classes completed in 4.139 secs.
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 11s
+14 actionable tasks: 1 executed, 13 up-to-date

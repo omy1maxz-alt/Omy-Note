@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Custom 6-Row Layout for Two-Thumb Optimization
+** 12-Column Grid
+** Row 1: Toolbar
+** Row 2: Numbers (Delete=2u)
+** Row 3: QWERTY Top + Select Start + Quote
+** Row 4: QWERTY Mid + Select End (Centered)
+** Row 5: QWERTY Bot + Shift(2u)
+** Row 6: Modifiers + Arrows + Space(4u) + Enter
+**
+*/
+-->
+
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="8.333333%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0dp"
+    android:verticalPad="@dimen/key_vertical_pad_compact"
+    android:layoutRows="6"
+>
+    <!-- Row 1: Toolbar -->
+    <Row android:rowEdgeFlags="top">
+        <Key android:codes="@integer/key_clipboard" android:keyLabel="📑" android:keyWidth="10%p" android:keyEdgeFlags="left" />
+        <Key android:codes="@integer/key_copy" android:keyLabel="📄" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_paste" android:keyLabel="📋" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_language" android:keyLabel="⛶" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_voice_toolbar" android:keyLabel="🎤" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_settings_toolbar" android:keyLabel="⏣️" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_info" android:keyLabel="⌨" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_icons" android:keyLabel="😐" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_more" android:keyLabel="⋯" android:keyWidth="10%p" />
+        <Key android:codes="@integer/key_close_toolbar" android:keyLabel="✕" android:keyWidth="10%p" android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- Row 2: Numbers (1-0, Delete=2u) -->
+    <Row>
+        <Key android:keyLabel="1" android:shiftLabel="!" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="`" android:keyEdgeFlags="left" />
+        <Key android:keyLabel="2" android:shiftLabel="\@" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="~" />
+        <Key android:keyLabel="3" android:shiftLabel="#" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="-" />
+        <Key android:keyLabel="4" android:shiftLabel="$" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="_" />
+        <Key android:keyLabel="5" android:shiftLabel="%" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="=" />
+        <Key android:keyLabel="6" android:shiftLabel="^" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="+" />
+        <Key android:keyLabel="7" android:shiftLabel="&amp;" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="{" />
+        <Key android:keyLabel="8" android:shiftLabel="*" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="}" />
+        <Key android:keyLabel="9" android:shiftLabel="(" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="[" />
+        <Key android:keyLabel="0" android:shiftLabel=")" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="]" />
+
+        <Key
+            android:codes="@integer/key_delete"
+            android:keyIcon="@drawable/sym_keyboard_delete"
+            android:iconPreview="@drawable/sym_keyboard_feedback_delete"
+            android:isModifier="true"
+            android:isRepeatable="true"
+            android:keyWidth="16.666666%p"
+            android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- Row 3: Q W E R T [Start] ' Y U I O P (12 keys) -->
+    <Row>
+        <Key android:keyLabel="q" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_q" android:keyEdgeFlags="left" />
+        <Key android:keyLabel="w" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_w" />
+        <Key android:keyLabel="e" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_e" />
+        <Key android:keyLabel="r" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_r" />
+        <Key android:keyLabel="t" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_t" />
+
+        <!-- Custom Key: Select to Start -->
+        <Key android:codes="@integer/key_select_start" android:keyLabel="⇤" android:isModifier="true" />
+
+        <Key android:keyLabel="\'" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="&quot;" />
+
+        <Key android:keyLabel="y" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_y" />
+        <Key android:keyLabel="u" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_u" />
+        <Key android:keyLabel="i" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_i" />
+        <Key android:keyLabel="o" android:popupKeyboard="@xml/kbd_popup_narrow_template" android:popupCharacters="@string/alternates_for_o" />
+        <Key android:keyLabel="p" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_p" android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- Row 4: Cut A S D F [End] G H J K L -->
+    <Row>
+        <!-- New Cut/Paste button at start. 8.33%p width. -->
+        <Key android:codes="@integer/key_cut" android:keyLabel="✂" android:keyWidth="8.333333%p" android:keyEdgeFlags="left" />
+
+        <Key android:keyLabel="a" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_a" />
+        <Key android:keyLabel="s" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_s" />
+        <Key android:keyLabel="d" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_d" />
+        <Key android:keyLabel="f" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_f" />
+
+        <!-- Custom Key: Select to End -->
+        <Key android:codes="@integer/key_select_end" android:keyLabel="⇥" android:isModifier="true" />
+
+        <!-- New Undo/Redo button filling the gap. 8.33%p width. -->
+        <Key android:codes="@integer/key_undo" android:keyLabel="↶" android:keyWidth="8.333333%p" android:keyEdgeFlags="left" />
+
+        <Key android:keyLabel="g" android:keyWidth="8.333333%p" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_g" />
+        <Key android:keyLabel="h" android:keyWidth="8.333333%p" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_h" />
+        <Key android:keyLabel="j" android:keyWidth="8.333333%p" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_j" />
+        <Key android:keyLabel="k" android:keyWidth="8.333333%p" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_k" />
+        <Key android:keyLabel="l" android:keyWidth="8.333333%p" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_l" android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- Row 5: Shift(2u) Z X C V / . B N M , (12u total) -->
+    <Row>
+        <Key android:codes="@integer/key_shift" android:keyWidth="16.666666%p" android:keyIcon="@drawable/sym_keyboard_shift" android:iconPreview="@drawable/sym_keyboard_feedback_shift" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left" />
+        <Key android:keyLabel="z" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_z" />
+        <Key android:keyLabel="x" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_x" />
+        <Key android:keyLabel="c" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_c" />
+        <Key android:keyLabel="v" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_v" />
+
+        <Key android:keyLabel="/" android:shiftLabel="?" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="\" />
+        <Key android:keyLabel="." android:shiftLabel="&gt;" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters=":" android:keyIcon="@drawable/hint_popup" />
+
+        <Key android:keyLabel="b" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_b" />
+        <Key android:keyLabel="n" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_n" />
+        <Key android:keyLabel="m" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="@string/alternates_for_m" />
+        <Key android:keyLabel="," android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters=";" android:shiftLabel="&lt;" android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- Row 6: Fn Ctrl Alt Left Down Up Right Space(3u) Enter(2u) (12u total) -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="@integer/key_fn" android:keyLabel="Fn" android:isModifier="true" android:keyEdgeFlags="left" />
+        <Key android:keyLabel="Ctrl" android:codes="@integer/key_ctrl_left" android:isSticky="true" android:isModifier="true" />
+        <Key android:codes="@integer/key_alt_left" android:keyLabel="Alt" android:isSticky="true" android:isModifier="true" />
+
+        <Key android:codes="@integer/key_dpad_left" android:isModifier="true" android:isRepeatable="true" android:isCursor="true" android:keyLabel="&#x25c1;" />
+        <Key android:codes="@integer/key_dpad_down" android:isModifier="true" android:isRepeatable="true" android:isCursor="true" android:keyLabel="&#x25bd;" />
+        <Key android:codes="@integer/key_dpad_up" android:isRepeatable="true" android:keyLabel="&#x25b3;" android:isCursor="true" android:isModifier="true" />
+        <Key android:codes="@integer/key_dpad_right" android:isModifier="true" android:keyLabel="&#x25b7;" android:isRepeatable="true" android:isCursor="true" />
+
+        <!-- Space (3 units wide = 25%) -->
+        <Key android:codes="@integer/key_space" android:keyIcon="@drawable/sym_keyboard_space" android:iconPreview="@drawable/sym_keyboard_feedback_space" android:keyWidth="25%p" android:isModifier="true" />
+
+        <!-- Enter (2 units wide = 16.66%) same as Backspace -->
+        <Key android:codes="@integer/key_return" android:keyIcon="@drawable/sym_keyboard_return" android:iconPreview="@drawable/sym_keyboard_feedback_return" android:keyWidth="16.666666%p" android:isModifier="true" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>
