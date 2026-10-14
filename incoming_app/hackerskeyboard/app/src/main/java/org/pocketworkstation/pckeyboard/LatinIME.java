@@ -1729,44 +1729,42 @@ private void onOptionKeyPressed() {
         }
     }
 
+    /**
+     * Select from the current cursor/selection to the start of the editor.
+     *
+     * Avoid ExtractedText offsets: some editors return only a window of a
+     * very large field, so the returned offsets/length may not represent the
+     * full document and may not be valid for setSelection().
+     */
     private void performSelectToStart() {
         InputConnection ic = getCurrentInputConnection();
         if (ic == null) return;
 
-        ExtractedTextRequest req = new ExtractedTextRequest();
-        req.token = 0;
-        req.flags = 0; // Strip GET_TEXT_WITH_STYLES to prevent Binder limits
-        ExtractedText et = ic.getExtractedText(req, 0);
-
-        if (et != null) {
-            int currentPos = Math.max(et.selectionStart, et.selectionEnd);
-            ic.setSelection(0, currentPos);
-        } else {
-            // Fallback for extremely large text or stubborn editors
-            long now = SystemClock.uptimeMillis();
-            ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MOVE_HOME, 0, KeyEvent.META_SHIFT_ON | KeyEvent.META_SHIFT_LEFT_ON | KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON));
-            ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MOVE_HOME, 0, KeyEvent.META_SHIFT_ON | KeyEvent.META_SHIFT_LEFT_ON | KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON));
-        }
+        long now = SystemClock.uptimeMillis();
+        int meta = KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON
+                | KeyEvent.META_SHIFT_ON | KeyEvent.META_SHIFT_LEFT_ON;
+        ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_DOWN,
+                KeyEvent.KEYCODE_MOVE_HOME, 0, meta));
+        ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_UP,
+                KeyEvent.KEYCODE_MOVE_HOME, 0, meta));
     }
 
+    /**
+     * Select from the current cursor/selection to the end of the editor.
+     * Delegate the operation to the editor so truncated ExtractedText does
+     * not cause a selection to stop at the end of the returned text window.
+     */
     private void performSelectToEnd() {
         InputConnection ic = getCurrentInputConnection();
         if (ic == null) return;
 
-        ExtractedTextRequest req = new ExtractedTextRequest();
-        req.token = 0;
-        req.flags = 0; // Strip GET_TEXT_WITH_STYLES to prevent Binder limits
-        ExtractedText et = ic.getExtractedText(req, 0);
-
-        if (et != null && et.text != null) {
-            int currentPos = Math.min(et.selectionStart, et.selectionEnd);
-            ic.setSelection(currentPos, et.text.length());
-        } else {
-            // Fallback for extremely large text or stubborn editors
-            long now = SystemClock.uptimeMillis();
-            ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MOVE_END, 0, KeyEvent.META_SHIFT_ON | KeyEvent.META_SHIFT_LEFT_ON | KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON));
-            ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MOVE_END, 0, KeyEvent.META_SHIFT_ON | KeyEvent.META_SHIFT_LEFT_ON | KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON));
-        }
+        long now = SystemClock.uptimeMillis();
+        int meta = KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON
+                | KeyEvent.META_SHIFT_ON | KeyEvent.META_SHIFT_LEFT_ON;
+        ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_DOWN,
+                KeyEvent.KEYCODE_MOVE_END, 0, meta));
+        ic.sendKeyEvent(new KeyEvent(now, now, KeyEvent.ACTION_UP,
+                KeyEvent.KEYCODE_MOVE_END, 0, meta));
     }
 
     private boolean isShowingOptionDialog() {
